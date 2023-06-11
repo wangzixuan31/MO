@@ -1,0 +1,98 @@
+<!--
+ * @Author: wangzixuan31 2916492020@qq.com
+ * @Date: 2023-06-10 11:00:15
+ * @LastEditors: wangzixuan31 2916492020@qq.com
+ * @LastEditTime: 2023-06-12 01:23:23
+ * @FilePath: \text\text.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="shortcut icon" href="../9.jpg">
+	<!-- 图标 -->
+	<link rel="icon" href="../9.jpg">
+	<link href="myScore.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="myScore.js"></script>
+</head>
+<body class="list">
+   
+									<header>
+										<h3>简易客户端成绩管理系统</h3>
+										<nav>
+											<ul>
+												<li ><a id="a1" href="#list" class="list">成绩查询</a></li>
+												<li ><a id="a2" href="#add" class="add">录入成绩</a></li>
+												<li ><a id="a3" href="#setting" class="setting">系统环境</a></li>
+											</ul>
+										</nav>
+									</header>
+									<!-- 三导航 -->
+									<section class="list">
+										<!-- 第一个 成绩查询 -->
+										<form name="list">
+											<input type="search"size="30"name="query" placeholder="请输入考生姓名">
+											<input type="button" value="搜索成绩" onclick="showScore();">
+											<!-- 脚本1 showScore -->
+											<br>
+											<textarea id="scorelist"rows="8"></textarea>
+											<!-- 结果 -->
+										</form>
+									</section>
+									<section class="add">
+										<!-- 第二个 录入成绩 -->
+										<form  name="add">
+											<fieldset>
+												<!-- 元素分组 -->
+												<legend align="center">成绩信息</legend>
+												学生姓名:<input type="text" name="people" autocomplete="true"> 
+												<br>
+												考试科目:<input type="text" name="subject" autocomplete="true">
+												<br>
+												考生成绩<input type="text" name="score" autocomplete="true"pattern="[0-9]{2}"required>
+												<!-- 必填 -->
+												<br>
+												考生学号<input type="text" name="sid" autocomplete="true"pattern="[0-9]{10}"required>
+												<!-- 必填 -->
+												<br>
+												<input type="button" name="myButton" value="添加成绩"onclick="addScore();">
+												<!-- 脚本2 addScore -->
+											</fieldset>
+										</form>
+									</section>
+									<section class="setting">
+										<!-- 第三个 系统设置 -->
+										<form  name="setting">
+											<input type="button" value="清除所有成绩" class="myButton" onclick="deleteAllScores();">
+											<!-- 脚本3.1 -->
+											<input type="button" value="清除数据库" class="myButton" onclick="deleteDatabase();">
+											<!-- 脚本3.2 -->
+											<!-- 用于设置完成后跳转页面 -->
+											<input type="button" value="重新加载" class="myButton" onclick="loadScore();">											 																																																																																											
+											<!-- 脚本3.3 显示可否加载 -->
+										</form>
+									</section>
+									<footer>
+										<p>
+											版权所有@青铜峡市宁朔中学 2023 校友工作室
+										</p>
+									</footer>
+									<ul>
+				
+				<li><a href="../text/index.html">首页</a></li>
+				<li><a href="../about/gn.html" target="_self">办学介绍</a></li>
+				<li><a href="../work/new.html"
+						target="_self">学校文件</a></li>
+				<li><a href="../score/score.html">成绩查询</a></li>
+				<li><a href="#" target="_self">学院相册</a></li>
+				<li><a href="#">学校论坛</a></li>
+				<li class="active">
+				</li>								
+
+			</ul>				
+</body>
+</html>

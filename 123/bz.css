@@ -1,0 +1,101 @@
+.carousel {
+    width: 800px;
+    height: 400px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.carousel .container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    position: relative;
+    left: 0;
+
+    transition: left 1s;
+}
+
+.carousel .container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+.carousel .shift .btn {
+    background-color: teal;
+    color: white;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    width: 50px;
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+
+    border-radius: 8px;
+    opacity: 0.5;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    /* 垂直居中 */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.carousel .shift .left {
+    left: 30px;
+}
+
+.carousel .shift .right {
+    right: 30px;
+}
+
+.carousel:hover .btn {
+    /* 悬浮时显示按钮 */
+    opacity: 1;
+}
+
+.carousel .bottom {
+    position: absolute;
+
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: max-content;
+
+    display: flex;
+    gap: 10px;
+}
+
+.carousel .bottom .indicator {
+    height: 5px;
+    width: 40px;
+    background-color: teal;
+    opacity: 0.5;
+
+    cursor: pointer;
+}
+.carousel:hover .bottom .indicator {
+    /* 悬浮时显示按钮 */
+    opacity: 1;
+}
+
+.carousel .bottom .indicator.activate {
+    background-color: pink;
+}

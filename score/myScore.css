@@ -1,0 +1,50 @@
+/*
+ * @Author: wangzixuan31 2916492020@qq.com
+ * @Date: 2023-06-10 11:02:05
+ * @LastEditors: wangzixuan31 2916492020@qq.com
+ * @LastEditTime: 2023-06-12 01:14:36
+ * @FilePath: \text\myScore.css
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/* 查分系统 */
+form{
+    text-align: center;
+    width: 400px;margin: 5px auto;
+    height: 180px;border:1px double #0066FF;padding: 20px;
+}
+ul{
+    list-style-type: none;text-align: center;
+}
+ul li{
+    display: inline-block;width: 90px;
+}
+ul li a:link,ul li a:active,
+
+ul li a:visited{
+    text-decoration: none;
+}
+
+ul li a:hover{
+    border-bottom: 3px solid red;
+}
+
+h3{
+    height: 48px; text-align: center; background: blue;
+    padding-top: 15px; vertical-align: middle;
+
+}
+.myButton{
+    margin:20px auto;width: 100px;height: 30px;background:gray
+}
+section{
+    display: none; 
+}
+
+body.list section.list,body.add section.add,
+body.setting section.setting{display:block;}
+footer{
+    padding:0px;margin: 0px auto;
+text-align:center; background: gold;height: 40px; }
+p{padding-top: 10px;font-size: 16px;}
+#scorelist{width: 100%;}
+
